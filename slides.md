@@ -1,80 +1,84 @@
-## MaptimeCalgary
+## Welcome to MaptimeSEA!
 
-### The presentation template
-This is the first slide.
+introduce yourself to your neighbor
 
-_Press `F` to go full-screen._<!-- .element: class="fragment" data-fragment-index="1" -->
+*install* a **text editor**
 
-_Try moving `RIGHT`._<!-- .element: class="fragment" data-fragment-index="2" -->
-
-
-
-## Follow along
-These slides are created with Reveal.js + Markdown.
-
-Take a look at the [raw source for the slides](https://raw.githubusercontent.com/MaptimeCalgary/presentation-example/gh-pages/slides.md). The repo can be found [here](https://github.com/MaptimeCalgary/presentation-example).
+big thanks to our wonderful hosts, **Broad Street Maps** and **WeWork Seattle**
 
 
 
-## This is a new slide
-Create these by placing 3 line-breaks in the markdown source.
+## Geocoding & APIs
 
-_From here, you can move `LEFT`, `RIGHT`, or `DOWN`._ <!-- .element: class="fragment" data-fragment-index="0" -->
+### MaptimeSEA
+3/4/2015
 
-_Try `DOWN`._ <!-- .element: class="fragment" data-fragment-index="1" -->
-
-
-## This is a vertical-slide
-You make these by placing 2 line-breaks within the source.
-
-Vertical-slides are good for drilling in to topics. Think of it as a _details_ slide. If you're short on time, you can skip past these slides by moving `RIGHT`.
+_Welcome!_<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
 
-<!-- .slide: data-background="MintCream" -->
-## Style
-
-You can style each slide individually.
-
-_Cool background, right?_<!-- .element: class="fragment" data-fragment-index="1" -->
-```
-<!-- .slide: data-background="MintCream" -->
-## Style
-
-You can style each slide individually.
-```
+## Why geocode?
+_you have an address, but want coordinates_<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
 
+## Geocoding has been around
+_where do we geocode?_ <!-- .element: class="fragment" data-fragment-index="0" -->
 
-## Hey, it even supports code!
+_desktop GIS much?_ <!-- .element: class="fragment" data-fragment-index="1" -->
 
-```
-var marker = L.marker([49, 5.49]).addTo(map);
-var polygon = L.polygon([
-  [51.509, -0.08],
-  [51.503, -0.06],
-  [51.51, -0.047]
-]).addTo(map);
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-polygon.bindPopup("I am a polygon.");
-```
+
+Why might the **desktop** approach be problematic for the **web**?
 
 
 
-## Want to see something really crazy?
-
-Press `S` to check out the 'Presentation Mode'.
-
-Note:
-The idea is that you put the other window on a shared screen, like a projector, and view this screen on your laptop. Btw, this note is only visible to the presenter.
+## So what is
+# API?
+_Application Programming Interface_ <!-- .element: class="fragment" data-fragment-index="0" -->
 
 
+### But what do they actually do?
+_they provide a means of communication on the web_ <!-- .element: class="fragment" data-fragment-index="0" -->
 
-## That's about it
+_in our case, an API allows us to send a query, and get back data that matches that query_ <!-- .element: class="fragment" data-fragment-index="1" -->
 
-There are a bunch of cool things you can do with **Reveal.js** and **Markdown**.
 
-Check out Reveal.js' [example slides](http://lab.hakim.se/reveal-js/) for more quick examples of what you can do with Reveal.js.  Check out Reveal.js' [Readme](https://github.com/hakimel/reveal.js/blob/master/README.md) and its [wiki](https://github.com/hakimel/reveal.js/wiki) (especially the [Articles & Tutorials](https://github.com/hakimel/reveal.js/wiki/Articles-&-Tutorials) section) for greater detail about using Reveal.js.  
+let's look at an example
 
-Check out this [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for a quick intro into using Markdown.
+
+
+`http://api.example.com?query=hello&format=json`
+_break it down_ <!-- .element: class="fragment" data-fragment-index="0" -->
+
+
+`http://api.example.com?query=hello&format=json`
+
+**api.example.com** is where we find the API
+
+
+`http://api.example.com?query=hello&format=json`
+
+**?** indicates parameters will follow
+
+_this is just a convention of communication on the web_ <!-- .element: class="fragment" data-fragment-index="0" -->
+
+
+`http://api.example.com?query=hello&format=json`
+
+**query=hello** is a parameter, `query` which for this request, equals `hello`
+
+
+`http://api.example.com?query=hello&format=json`
+
+**&** delimits parameters
+
+
+`http://api.example.com?query=hello&format=json`
+
+**format=json** is another parameter, that basically says, "hey send me some json!"
+
+
+
+## Build it
+
+http://maptimesea.github.io/2015/03/03/gecoding-api.html
