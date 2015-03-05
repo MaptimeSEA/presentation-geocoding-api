@@ -6,6 +6,8 @@ introduce yourself to your neighbor
 
 big thanks to our wonderful hosts, **Broad Street Maps** and **WeWork Seattle**
 
+wifi: wework
+
 
 
 ## Geocoding & APIs
